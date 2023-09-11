@@ -2,7 +2,7 @@ name: Deployment Workflow
 on: push
 
 jobs:
-  lint: 
+  deploy: 
     runs-on: ubuntu-latest
     steps:
       - name: Get Code

@@ -1,9 +1,9 @@
-name: Issues Workflow
+name: Handle Issues
 on: issues
 
 jobs:
   output:
     runs-on: ubuntu-latest
     steps:
-      - name: Output GitHub context
-        run: echo "${{ toJson(github)}}"
+      - name: Output event details
+        run: echo "${{ toJson(github.event)}}"
